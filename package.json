@@ -1,9 +1,12 @@
 {
-  "name": "Finance Tracker",
+  "name": "FinanceTracker",
   "version": "1.0.0",
   "description": "",
   "main": "transpiled/server.js",
   "scripts": {
+    "dev": "npm run transpile; npm run start",
+    "transpile": "node ./node_modules/babel-cli/bin/babel . --out-dir ./transpiled --retain-lines --ignore '**node_modules,.git,transpiled' -x '.es6,.js,.es,.jsx';",
+    "start": "node ./transpiled/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fabio Berger",
