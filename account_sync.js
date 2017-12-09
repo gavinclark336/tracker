@@ -26,7 +26,7 @@ const accountSync = {
                         Add it to the enum in order to resolve this error.
                     `);
                 }
-                await this.updateCurrencyPriceInAirtableAsync(currencyName, priceInDollars);
+                await this.updateCurrencyPriceInAirtableAsync(currencyName, parseFloat(priceInDollars));
             }
         }
     },
