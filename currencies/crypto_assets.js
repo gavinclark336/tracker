@@ -3,7 +3,9 @@ const utils = require('../utils');
 
 // Source: https://coinmarketcap.com/api
 const cryptoAssetList = [
+    '0x',
     'bitcoin', // Bitcoin
+    'bitcoin-cash', // Bitcoin cash
     'ethereum', // Ethereum
     'litecoin', // Litecoin
     'ripple', // Ripple
